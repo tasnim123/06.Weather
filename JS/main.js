@@ -1,4 +1,4 @@
-//Using the id from index.html to make the function run
+
 
 const weatherApiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
 const oneCallApiEndpoint = "https://api.openweathermap.org/data/2.5/onecall";
@@ -23,9 +23,7 @@ searchButton.addEventListener('click', () => {
     renderHistoricalCities(JSON.parse(localStorage.getItem(historicalCitiesArrayKey) || '[]'));
 });
 
-/* When we write down a new city "which include its ARRAY" needs to appear in the history and to be 
-in the local storage, if the city already exists then nothing 
-is going to happen */
+
 
 function setNewCityToLocalstorage(city) {
     let store = JSON.parse(localStorage.getItem(historicalCitiesArrayKey) || '[]');
@@ -36,7 +34,6 @@ function setNewCityToLocalstorage(city) {
     localStorage.setItem(historicalCitiesArrayKey, JSON.stringify(store));
 }
 
-/* The city write down will appear like a first value [0] */
 function renderHistoricalCities(historyCities) {
     let historyCitiesBox = document.getElementsByClassName("search-history")[0];
 

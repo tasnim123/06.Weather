@@ -1,58 +1,60 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: rgb(238, 237, 226);
-    background-image: linear-gradient(to left, rgb(247, 239, 195), rgb(240, 227, 158), rgb(235, 229, 177));
+  background-color: white;
+  background-image: url(./background.jpg);
 }
 
 header {
-    font-family: 'Arial';
-    background-image: linear-gradient(to left, rgb(7, 0, 139), rgb(9, 9, 184), rgb(15, 77, 250));
-    padding: 25px;
+  font-family: 'Times New Roman';
+  background-color: #1c87c9;
+  padding: 50px;
 }
 
 header h1 {
-    font-size: 25px;
-    text-align: center;
-    color: blanchedalmond;
+  font-size: 25px;
+  text-align: center;
+  color: blanchedalmond;
 }
 
 .column {
-    float: left;
-    width: 35%;
+  float: left;
+  width: 45%;
 }
 
 .colum {
-    float: right;
-    width: 65%;
+  float: right;
+  width: 65%;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
-    content: "";
-    display: inline-block;
-    clear: both;
+  content: '';
+  display: inline-block;
+  clear: both;
 }
 
 .rightside {
-    margin: 40px;
-    font-family: 'Arial';
+  margin: 40px;
+  font-family: 'Times New Roman';
 }
 
 .dashboard {
-    width: 600px;
-    height: 280px;
-    padding: 20px;
-    border: 2px solid;
-    border-radius: 5px;
-    margin: 4px;
-    background-image: linear-gradient(to left, rgb(56, 46, 241), rgb(85, 85, 241), rgb(141, 169, 245));
+  width: 600px;
+  height: 280px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 4px;
+  background-image: linear-gradient(
+    to left,
+    rgb(56, 46, 241),
+    rgb(85, 85, 241),
+    rgb(141, 169, 245)
+  );
 }
 
 #City,
@@ -62,29 +64,34 @@ header h1 {
 #Wind,
 #Humidity,
 #UV-Index {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
 }
 
 .forecast {
-    display: flex;
-    flex-direction: row;
-    width: 800px;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
 }
 
-[class*="future-day-"] {
-    width: 150px;
-    height: 200px;
-    margin: 10px;
-    border: 2px solid;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px rgb(220, 207, 20);
-    background-image: linear-gradient(to left, rgb(104, 96, 250), rgb(123, 123, 241), rgb(141, 169, 245));
+[class*='future-day-'] {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(220, 207, 20);
+  background-image: linear-gradient(
+    to left,
+    rgb(104, 96, 250),
+    rgb(123, 123, 241),
+    rgb(141, 169, 245)
+  );
 }
 
-[class*="future-day-"] span {
-    display: block;
+[class*='future-day-'] span {
+  display: block;
 }
 
 #Today,
@@ -92,98 +99,90 @@ header h1 {
 #Temp,
 #Wind,
 #Humidity {
-    font-size: 14px;
-    margin: 6px;
+  font-size: 14px;
+  margin: 6px;
 }
 
 .leftside {
-    margin: 40px;
-    font-family: 'Arial';
+  margin: 40px;
+  font-family: 'Arial';
 }
 
-
-
-
-
 #input-city {
-    width: 250px;
-    height: 35px;
-    padding: 10px;
-    border: 2px solid;
-    margin: 10px;
-    border-radius: 5px;
+  width: 250px;
+  height: 35px;
+  padding: 10px;
+  border: 2px solid;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 #search {
-    display: block;
-    width: 250px;
-    height: 35px;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid;
-    border-color: black;
-    border-radius: 5px;
-    background-color: rgb(82, 140, 228);
-    color: white;
-    font-weight: bold;
+  display: block;
+  width: 250px;
+  height: 35px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: rgb(82, 140, 228);
+  color: white;
+  font-weight: bold;
 }
 
 .divider {
-    width: 250px;
-    height: 1px;
-    padding: 0.8px;
-    margin: 11px;
-    background-color: black;
+  width: 250px;
+  height: 1px;
+  padding: 0.8px;
+  margin: 11px;
+  background-color: black;
 }
 
 .search-history {
-    width: 250px;
-    height: auto;
-    border-radius: 5px;
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .search-history button {
-    display: block;
-    width: 250px;
-    height: 35px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    background-color: #B7B7B7;
+  display: block;
+  width: 250px;
+  height: 35px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #b7b7b7;
 }
 
 .Search-For-A-City h2 {
-    font-size: 18px;
-    display: inline-block;
+  font-size: 18px;
+  display: inline-block;
 }
 
-
-
-
-
 footer {
-    padding: 90px;
-    clear: both;
-    font-family: 'Arial';
-    text-align: center;
+  padding: 90px;
+  clear: both;
+  font-family: 'Arial';
+  text-align: center;
 }
 
 footer h2 {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 footer p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-@media screen and (max-width:1200px) {
-    .box {
-        width: 40%;
-    }
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 40%;
+  }
 }
 
-@media screen and (max-width:600px) {
-    .box {
-        width: 40%;
-    }
+@media screen and (max-width: 600px) {
+  .box {
+    width: 40%;
+  }
 }
